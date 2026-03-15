@@ -1,4 +1,3 @@
-// Mobile menu toggle
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -7,7 +6,6 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-// Close mobile menu when clicking on a link
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -15,7 +13,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Smooth scrolling for navigation links
 document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
@@ -30,7 +27,6 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     });
 });
 
-// Theme toggle
 const themeToggle = document.getElementById('btn-tema');
 const body = document.body;
 
@@ -46,7 +42,6 @@ function toggleTheme() {
 
 themeToggle.addEventListener('click', toggleTheme);
 
-// Scroll to projects
 const viewProjectsBtn = document.getElementById('ver-proyectos');
 viewProjectsBtn.addEventListener('click', function() {
     document.getElementById('proyectos').scrollIntoView({
@@ -54,13 +49,11 @@ viewProjectsBtn.addEventListener('click', function() {
     });
 });
 
-// GitHub projects fetch
 async function loadGitHubProjects() {
     const container = document.getElementById('contenedor-proyectos');
     container.innerHTML = '<div class="loading">Cargando proyectos...</div>';
 
     try {
-        // Replace with actual GitHub username
         const response = await fetch('https://api.github.com/users/daydev01-ui/repos?sort=updated&per_page=6');
         if (!response.ok) {
             throw new Error('No se pudieron cargar los proyectos');
@@ -105,10 +98,8 @@ async function loadGitHubProjects() {
     }
 }
 
-// Load projects on page load
 document.addEventListener('DOMContentLoaded', loadGitHubProjects);
 
-// Intersection Observer for animations
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -122,12 +113,10 @@ const observer = new IntersectionObserver((entries) => {
     });
 }, observerOptions);
 
-// Observe all sections
 document.querySelectorAll('.section').forEach(section => {
     observer.observe(section);
 });
 
-// Add some example projects if GitHub fails (fallback)
 const fallbackProjects = [
     {
         name: 'Sistema-Administrativo',
@@ -155,5 +144,4 @@ const fallbackProjects = [
     }
 ];
 
-// Keep existing code for demonstration
 console.log('Portafolio cargado exitosamente');
