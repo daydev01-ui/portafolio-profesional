@@ -1,123 +1,245 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Portafolio Profesional</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header class="hero">
-    <div class="container hero-content">
-        <div class="hero-text">
-            <h1>Desarrollador Full Stack</h1>
-            <p>.NET y SQL Server</p>
-        </div>
-    </div>
-</header>
-
-<section class="section">
-    <div class="container">
-        <h2>Microempresas</h2>
-        <div class="grid-2">
-            <p>
-                Desarrollo de sistemas personalizados para gestión administrativa,
-                control de inventarios, facturación y reportes financieros.
-            </p>
-            <div class="card">
-                Dashboard administrativo con métricas en tiempo real.
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Portafolio profesional de desarrolladora Full Stack especializada en .NET, SQL Server y JavaScript">
+      <meta name="keywords" content="desarrolladora, full stack, .NET, SQL Server, JavaScript, portafolio">
+      <title>Portafolio Profesional - Dayana</title>
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   </head>
+   <body>
+      <div class="floating-icons"></div>
+      <nav class="navbar">
+         <div class="container nav-container">
+            <div class="logo">
+               <h2>DayDev</h2>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="section bg-light">
-    <div class="container">
-        <h2>Código QR</h2>
-        <div class="grid-2">
-            <div class="card">
-                Integración con pasarelas de pago.
+            <div class="nav-menu">
+               <ul class="nav-links">
+                  <li><a href="#inicio">Inicio</a></li>
+                  <li><a href="#sobre-mi">Sobre Mí</a></li>
+                  <li><a href="#proyectos">Proyectos</a></li>
+                  <li><a href="#experiencia">Experiencia</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+               </ul>
             </div>
-            <p>
-                Implementación de pagos digitales seguros y eficientes,
-                optimizando las transacciones electrónicas.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h2>Gestión de Ventas</h2>
-        <div class="grid-3">
-            <div class="card">Gestión y seguimiento de ventas.</div>
-            <div class="card">CRM básico y administración de clientes.</div>
-            <div class="card">Análisis de métricas y reportes estratégicos.</div>
-        </div>
-    </div>
-</section>
-
-<section class="section bg-soft">
-    <div class="container">
-        <h2>Perfil Profesional</h2>
-        <p>
-            Desarrollador Full Stack con experiencia en aplicaciones web y sistemas empresariales.
-            Especializado en .NET y SQL Server.
-        </p>
-    </div>
-</section>
-
-<section class="section">
-    <div class="container">
-        <h2>Experiencia Laboral</h2>
-        <div class="grid-3">
-            <div class="card">
-                <strong>Gobierno Autónomo Municipal de La Paz</strong>
-                <p>Desarrollo de sistemas para microempresas.</p>
+            <button id="btn-tema" class="theme-toggle">
+               <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger">
+               <span class="bar"></span>
+               <span class="bar"></span>
+               <span class="bar"></span>
             </div>
-            <div class="card">
-                <strong>Empresa Pública Quipus</strong>
-                <p>Sistemas de control de calidad.</p>
+         </div>
+      </nav>
+      <header class="hero" id="inicio">
+         <div class="container hero-content">
+            <div class="hero-text">
+               <h1>Desarrolladora Full Stack</h1>
+               <p>Especializada en .NET • SQL Server • JavaScript</p>
+               <div class="hero-buttons">
+                  <button id="ver-proyectos" class="btn btn-primary">
+                     <i class="fas fa-briefcase"></i> Ver Proyectos
+                  </button>
+                  <a href="#contacto" class="btn btn-outline">
+                     <i class="fas fa-envelope"></i> Contactar
+                  </a>
+               </div>
             </div>
-            <div class="card">
-                <strong>Banco de Crédito BCP</strong>
-                <p>Sistemas de gestión de pagos.</p>
+            <div class="hero-image">
+               <div class="avatar-container">
+                  <div class="avatar">
+                     <i class="fas fa-user-astronaut"></i>
+                  </div>
+                  <div class="tech-decoration">
+                     <i class="fas fa-code"></i>
+                     <i class="fas fa-laptop-code"></i>
+                     <i class="fas fa-database"></i>
+                  </div>
+               </div>
             </div>
-        </div>
-    </div>
-</section>
-
-<section class="section bg-education">
-    <div class="container">
-        <h2>Educación</h2>
-        <div class="education-item">
-            <span>UMSA - Informática</span>
-            <span>2020-2025</span>
-        </div>
-        <div class="education-item">
-            <span>Jala University - Web Full Stack</span>
-            <span>2022</span>
-        </div>
-        <div class="education-item">
-            <span>Instituto Técnico Atenea</span>
-            <span>2020</span>
-        </div>
-        <div class="education-item">
-            <span>CBA</span>
-            <span>2014</span>
-        </div>
-    </div>
-</section>
-
-<section class="contact">
-    <h2>Contacto</h2>
-    <p>correo@ejemplo.com</p>
-</section>
-
-<footer>
-    © 2026 Portafolio Profesional
-</footer>
-
-</body>
+         </div>
+      </header>
+      <section class="section about" id="sobre-mi">
+         <div class="container">
+            <div class="section-header">
+               <h2>Sobre Mí</h2>
+               <p>Conoce más sobre mi trayectoria profesional</p>
+            </div>
+            <div class="about-content">
+               <div class="about-text">
+                  <p>Soy una desarrolladora Full Stack apasionada por crear soluciones tecnológicas que impulsen el crecimiento de las microempresas. Con experiencia en desarrollo de sistemas administrativos, gestión de pagos digitales y análisis de datos.</p>
+                  <p>Mi enfoque se centra en escribir código limpio, eficiente y escalable, utilizando las mejores prácticas de desarrollo para entregar productos de alta calidad.</p>
+               </div>
+               <div class="skills">
+                  <h3>Habilidades Técnicas</h3>
+                  <div class="skills-grid">
+                     <div class="skill-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>.NET</span>
+                     </div>
+                     <div class="skill-item">
+                        <i class="fas fa-database"></i>
+                        <span>SQL Server</span>
+                     </div>
+                     <div class="skill-item">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                     </div>
+                     <div class="skill-item">
+                        <i class="fab fa-html5"></i>
+                        <span>HTML5</span>
+                     </div>
+                     <div class="skill-item">
+                        <i class="fab fa-css3-alt"></i>
+                        <span>CSS3</span>
+                     </div>
+                     <div class="skill-item">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section projects" id="proyectos">
+         <div class="container">
+            <div class="section-header">
+               <h2>Mis Proyectos</h2>
+               <p>Soluciones desarrolladas para microempresas</p>
+            </div>
+            <div class="projects-grid">
+               <div class="project-card">
+                  <div class="project-icon">
+                     <i class="fas fa-chart-line"></i>
+                  </div>
+                  <h3>Sistema Administrativo</h3>
+                  <p>Dashboard completo con métricas en tiempo real para gestión empresarial.</p>
+                  <div class="tech-stack">
+                     <span class="tech">.NET</span>
+                     <span class="tech">SQL Server</span>
+                     <span class="tech">JavaScript</span>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-icon">
+                     <i class="fas fa-qrcode"></i>
+                  </div>
+                  <h3>Pagos con QR</h3>
+                  <p>Integración de pagos digitales seguros con pasarelas de pago modernas.</p>
+                  <div class="tech-stack">
+                     <span class="tech">API</span>
+                     <span class="tech">Seguridad</span>
+                     <span class="tech">QR</span>
+                  </div>
+               </div>
+               <div class="project-card">
+                  <div class="project-icon">
+                     <i class="fas fa-shopping-cart"></i>
+                  </div>
+                  <h3>Gestión de Ventas</h3>
+                  <p>Sistema completo de control de ventas y gestión de clientes.</p>
+                  <div class="tech-stack">
+                     <span class="tech">CRM</span>
+                     <span class="tech">Reportes</span>
+                     <span class="tech">Analytics</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section github-projects">
+         <div class="container">
+            <div class="section-header">
+               <h2>Proyectos en GitHub</h2>
+               <p>Explora mis repositorios públicos</p>
+            </div>
+            <div id="contenedor-proyectos" class="projects-grid">       
+            </div>
+         </div>
+      </section>
+      <section class="section experience" id="experiencia">
+         <div class="container">
+            <div class="section-header">
+               <h2>Experiencia Profesional</h2>
+               <p>Mi trayectoria en el desarrollo de software</p>
+            </div>
+            <div class="experience-timeline">
+               <div class="experience-item">
+                  <div class="experience-icon">
+                     <i class="fas fa-building"></i>
+                  </div>
+                  <div class="experience-content">
+                     <h3>Gobierno Autónomo Municipal de La Paz</h3>
+                     <p class="experience-role">Desarrolladora de Sistemas</p>
+                     <p>Desarrollo de sistemas personalizados para microempresas locales, enfocándome en soluciones administrativas eficientes.</p>
+                  </div>
+               </div>
+               <div class="experience-item">
+                  <div class="experience-icon">
+                     <i class="fas fa-industry"></i>
+                  </div>
+                  <div class="experience-content">
+                     <h3>Empresa Pública Quipus</h3>
+                     <p class="experience-role">Especialista en Control de Calidad</p>
+                     <p>Implementación de sistemas de control de calidad y gestión de procesos industriales.</p>
+                  </div>
+               </div>
+               <div class="experience-item">
+                  <div class="experience-icon">
+                     <i class="fas fa-university"></i>
+                  </div>
+                  <div class="experience-content">
+                     <h3>Banco BCP</h3>
+                     <p class="experience-role">Desarrolladora de Sistemas de Pagos</p>
+                     <p>Desarrollo e integración de sistemas de pagos electrónicos seguros y eficientes.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section contact" id="contacto">
+         <div class="container">
+            <div class="section-header">
+               <h2>Contacto</h2>
+               <p>¿Interesado en trabajar juntos? ¡Hablemos!</p>
+            </div>
+            <div class="contact-content">
+               <div class="contact-info">
+                  <div class="contact-item">
+                     <i class="fas fa-envelope"></i>
+                     <span>dayanaher448@gmail.com</span>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-map-marker-alt"></i>
+                     <span>La Paz, Bolivia</span>
+                  </div>
+                  <div class="contact-item">
+                     <i class="fas fa-phone"></i>
+                     <span>+591 62300923</span>
+                  </div>
+               </div>
+               <div class="social-links">
+                  <a href="https://github.com/daydev01-ui" target="_blank" class="social-link">
+                     <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://bo.linkedin.com/in/carol-dayana-hernandez-aquize" target="_blank" class="social-link">
+                     <i class="fab fa-linkedin"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <footer class="footer">
+         <div class="container">
+            <p>&copy; 2026 DayDev - Desarrolladora Full Stack. Todos los derechos reservados.</p>
+         </div>
+      </footer>
+      <script src="script.js"></script>
+   </body>
 </html>
